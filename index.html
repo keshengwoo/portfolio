@@ -7,183 +7,254 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-CL9V22KF5Q');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WOO KE SHENG - Personal Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>WOOKESHENG - Personal Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">
-            <span class="logo-text">WOO KE SHENG</span>
-            <span class="logo-dot"></span>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                WOO KE SHENG<span class="text-primary"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <p class="hero-greeting">👋 Hello, I'm</p>
-                <h1>WOO KE <span class="highlight">SHENG</span></h1>
-                <p class="hero-subtitle">Web Developer & Designer</p>
-                <p class="hero-description">I create beautiful and functional websites that leave a lasting impression.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn primary-btn">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact Me
-                    </a>
-                    <a href="#projects" class="btn secondary-btn">
-                        <i class="fas fa-eye"></i>
-                        View My Work
-                    </a>
+    <section id="home" class="hero min-vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content pe-lg-5">
+                        <span class="badge bg-primary mb-3 px-3 py-2">👋 Hello, I'm</span>
+                        <h1 class="display-4 fw-bold mb-3">WOO KE <span class="text-gradient">SHENG</span></h1>
+                        <p class="lead mb-2">Web Developer & Designer</p>
+                        <p class="text-muted mb-4">I create beautiful and functional websites that leave a lasting impression.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="fas fa-paper-plane me-2"></i>Contact Me
+                            </a>
+                            <a href="#projects" class="btn btn-outline-dark">
+                                <i class="fas fa-eye me-2"></i>View My Work
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-profile text-center">
+                        <img src="images/kesheng.jpg" alt="Woo Ke Sheng" class="img-fluid rounded-4 shadow-lg">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-header">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">Get to know me better</p>
-        </div>
-        <div class="about-content">
-            <div class="profile-pic">
-                <img src="assets/images/profile.jpg" alt="Woo Ke Sheng">
-                <div class="profile-overlay"></div>
+    <section id="about" class="py-6 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">About Me</h2>
+                    <p class="text-muted">Get to know me better</p>
+                </div>
             </div>
-            <div class="about-text">
-                <h3>A Passionate Web Developer</h3>
-                <p>Hello! I'm a dedicated web developer with a strong foundation in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
-                <div class="about-links">
-                    <a href="#contact" class="btn primary-btn">Get in Touch</a>
-                    <a href="#" class="btn outline-btn">Download CV</a>
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="position-relative">
+                        <div class="profile-pic mx-auto">
+                            <img src="images/kesheng2.jpg" alt="Woo Ke Sheng" class="img-fluid">
+                            <div class="profile-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3 class="fw-bold mb-4">A Passionate Web Developer</h3>
+                        <p class="lead mb-4">Currently in my final year at YPC International College, in partnership with Liverpool John Moores University, I am pursuing a degree in Multimedia Computing. I have a deep passion for design, writing, editing, and coding, and am committed to developing my skills in these areas.</p>
+                        <p class="text-muted mb-4">When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                            <a href="assets/WOO KE SHENG_Resume.pdf" class="btn btn-outline-dark">Download CV</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="section-header">
-            <h2 class="section-title">My Skills</h2>
-            <p class="section-subtitle">What I can do</p>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-code"></i>
+    <section id="skills" class="py-6">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">My Skills</h2>
+                    <p class="text-muted">What I can do</p>
                 </div>
-                <h3>Frontend Development</h3>
-                <p>Creating responsive and interactive user interfaces using modern web technologies.</p>
-                <ul class="skill-list">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                </ul>
             </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-mobile-alt"></i>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-code text-primary fa-2x"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Frontend Development</h4>
+                            <p class="card-text text-muted mb-4">Creating responsive and interactive user interfaces using modern web technologies.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-light text-dark">HTML</span>
+                                <span class="badge bg-light text-dark">CSS</span>
+                                <span class="badge bg-light text-dark">JavaScript</span>
+                                <span class="badge bg-light text-dark">React.js</span>
+                                <span class="badge bg-light text-dark">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3>Responsive Design</h3>
-                <p>Building websites that work seamlessly across all devices and screen sizes.</p>
-                <ul class="skill-list">
-                    <li>Mobile-First</li>
-                    <li>Flexbox</li>
-                    <li>CSS Grid</li>
-                    <li>Media Queries</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-paint-brush"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-video text-primary fa-2x"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Video Editing</h4>
+                            <p class="card-text text-muted mb-4">Creating compelling video content with professional editing and visual effects.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-light text-dark">Adobe Premiere Pro</span>
+                                <span class="badge bg-light text-dark">After Effects</span>
+                                <span class="badge bg-light text-dark">CapCut</span>
+                                <span class="badge bg-light text-dark">Final Cut Pro</span>
+                                <span class="badge bg-light text-dark">iMovie</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3>UI/UX Design</h3>
-                <p>Creating intuitive and visually appealing user experiences.</p>
-                <ul class="skill-list">
-                    <li>User Research</li>
-                    <li>Wireframing</li>
-                    <li>Prototyping</li>
-                    <li>Design Systems</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <i class="fas fa-database"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-paint-brush text-primary fa-2x"></i>
+                            </div>
+                            <h4 class="card-title mb-3">UI/UX Design</h4>
+                            <p class="card-text text-muted mb-4">Creating intuitive and visually appealing user experiences.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-light text-dark">User Research</span>
+                                <span class="badge bg-light text-dark">Wireframing</span>
+                                <span class="badge bg-light text-dark">Prototyping</span>
+                                <span class="badge bg-light text-dark">Design Systems</span>
+                                <span class="badge bg-light text-dark">Adobe XD</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3>Backend Development</h3>
-                <p>Building robust server-side applications and APIs.</p>
-                <ul class="skill-list">
-                    <li>Node.js</li>
-                    <li>Python</li>
-                    <li>RESTful APIs</li>
-                    <li>Databases</li>
-                </ul>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box mb-4">
+                                <i class="fas fa-database text-primary fa-2x"></i>
+                            </div>
+                            <h4 class="card-title mb-3">Backend Development</h4>
+                            <p class="card-text text-muted mb-4">Building robust server-side applications and APIs.</p>
+                            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                                <span class="badge bg-light text-dark">Node.js</span>
+                                <span class="badge bg-light text-dark">Python</span>
+                                <span class="badge bg-light text-dark">PHP</span>
+                                <span class="badge bg-light text-dark">C++</span>
+                                <span class="badge bg-light text-dark">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="section-header">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Recent work</p>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 1">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="btn project-btn"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> Source Code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Project One</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
+    <section id="projects" class="py-6 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">My Projects</h2>
+                    <p class="text-muted">Recent work</p>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/600x400" alt="Project 2">
-                    <div class="project-overlay">
-                        <div class="project-links">
-                            <a href="#" class="btn project-btn"><i class="fas fa-eye"></i> Live Demo</a>
-                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> Source Code</a>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 1">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3">Project One</h4>
+                            <p class="card-text text-muted mb-4">A brief description of the project and the technologies used.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-primary">HTML</span>
+                                <span class="badge bg-primary">CSS</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-eye me-2"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-dark">
+                                    <i class="fab fa-github me-2"></i>Source Code
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-info">
-                    <h3>Project Two</h3>
-                    <p>A brief description of the project and the technologies used.</p>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm">
+                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 2">
+                        <div class="card-body p-4">
+                            <h4 class="card-title mb-3">Project Two</h4>
+                            <p class="card-text text-muted mb-4">A brief description of the project and the technologies used.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge bg-primary">React</span>
+                                <span class="badge bg-primary">Node.js</span>
+                                <span class="badge bg-primary">MongoDB</span>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fas fa-eye me-2"></i>Live Demo
+                                </a>
+                                <a href="#" class="btn btn-outline-dark">
+                                    <i class="fab fa-github me-2"></i>Source Code
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,43 +262,77 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-header">
-            <h2 class="section-title">Contact</h2>
-            <p class="section-subtitle">Let's Connect</p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-card">
-                <div class="contact-info">
-                    <div class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-details">
-                            <h3>Email Me</h3>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <i class="fab fa-linkedin"></i>
-                        <div class="contact-details">
-                            <h3>Connect on LinkedIn</h3>
-                            <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <i class="fab fa-github"></i>
-                        <div class="contact-details">
-                            <h3>Follow on GitHub</h3>
-                            <a href="#" target="_blank">github.com/yourusername</a>
-                        </div>
-                    </div>
+    <section id="contact" class="py-6">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">Contact</h2>
+                    <p class="text-muted">Let's Connect</p>
                 </div>
-                <div class="contact-social">
-                    <p>Or find me on social media:</p>
-                    <div class="social-icons">
-                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-behance"></i></a>
-                        <a href="#" target="_blank" class="social-icon"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg" data-aos="fade-up">
+                        <div class="card-body p-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="contact-info-card mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-box me-3">
+                                                <i class="fas fa-envelope text-primary fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">Email Me</h5>
+                                                <a href="mailto:kesheng@ypccollege.edu.my" class="text-muted">kesheng@ypccollege.edu.my</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-card mb-4">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-box me-3">
+                                                <i class="fab fa-linkedin text-primary fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">LinkedIn</h5>
+                                                <a href="https://www.linkedin.com/in/keshengw22257/" class="text-muted" target="_blank">linkedin.com/in/keshengw22257</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info-card">
+                                        <div class="d-flex align-items-center">
+                                            <div class="icon-box me-3">
+                                                <i class="fab fa-github text-primary fa-2x"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">GitHub</h5>
+                                                <a href="https://github.com/keshengwoo" class="text-muted" target="_blank">github.com/keshengwoo</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 border-start">
+                                    <div class="contact-preferences">
+                                        <h5 class="mb-4">Contact Preferences</h5>
+                                        <div class="preference-item mb-4">
+                                            <h6 class="mb-2"><i class="fas fa-clock me-2"></i>Response Time</h6>
+                                            <p class="text-muted">Usually within 24-48 hours on business days</p>
+                                        </div>
+                                        <div class="preference-item mb-4">
+                                            <h6 class="mb-2"><i class="fas fa-language me-2"></i>Languages</h6>
+                                            <p class="text-muted">English (Professional), Chinese (Native)</p>
+                                        </div>
+                                        <div class="preference-item mb-4">
+                                            <h6 class="mb-2"><i class="fas fa-briefcase me-2"></i>Project Inquiries</h6>
+                                            <p class="text-muted">Please include project details, timeline, and budget in your initial message</p>
+                                        </div>
+                                        <div class="preference-item">
+                                            <h6 class="mb-2"><i class="fas fa-globe me-2"></i>Timezone</h6>
+                                            <p class="text-muted">Malaysia Time (UTC+8)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,24 +340,40 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <span class="logo-text">WOO KE SHENG</span>
-                <p>Web Developer & Designer</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5 class="mb-1">WOO KE SHENG</h5>
+                    <p class="text-muted mb-0">Web Developer & Designer</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/keshengw22257/" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/keshengwoo" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Woo Ke Sheng. All rights reserved.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Woo Ke Sheng. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html> 
