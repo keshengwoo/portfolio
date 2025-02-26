@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOO KE SHENG - Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-text">WOO KE SHENG</span>
+            <span class="logo-dot"></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">👋 Hello, I'm</p>
+                <h1>WOO KE <span class="highlight">SHENG</span></h1>
+                <p class="hero-subtitle">Web Developer & Designer</p>
+                <p class="hero-description">I create beautiful and functional websites that leave a lasting impression.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact Me
+                    </a>
+                    <a href="#projects" class="btn secondary-btn">
+                        <i class="fas fa-eye"></i>
+                        View My Work
+                    </a>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <div class="mouse"></div>
+                <p>Scroll down</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+            <div class="profile-pic">
+                <img src="assets/images/profile.jpg" alt="Woo Ke Sheng">
+                <div class="profile-overlay"></div>
+            </div>
+            <div class="about-text">
+                <h3>A Passionate Web Developer</h3>
+                <p>Hello! I'm a dedicated web developer with a strong foundation in creating responsive and user-friendly websites. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                <div class="about-links">
+                    <a href="#contact" class="btn primary-btn">Get in Touch</a>
+                    <a href="#" class="btn outline-btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">What I can do</p>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Frontend Development</h3>
+                <p>Creating responsive and interactive user interfaces using modern web technologies.</p>
+                <ul class="skill-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Responsive Design</h3>
+                <p>Building websites that work seamlessly across all devices and screen sizes.</p>
+                <ul class="skill-list">
+                    <li>Mobile-First</li>
+                    <li>Flexbox</li>
+                    <li>CSS Grid</li>
+                    <li>Media Queries</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive and visually appealing user experiences.</p>
+                <ul class="skill-list">
+                    <li>User Research</li>
+                    <li>Wireframing</li>
+                    <li>Prototyping</li>
+                    <li>Design Systems</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Backend Development</h3>
+                <p>Building robust server-side applications and APIs.</p>
+                <ul class="skill-list">
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>RESTful APIs</li>
+                    <li>Databases</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Recent work</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 2">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="btn project-btn"><i class="fas fa-eye"></i> Live Demo</a>
+                            <a href="#" class="btn project-btn"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>A brief description of the project and the technologies used.</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>your.email@example.com</p>
+                    <a href="mailto:your.email@example.com" class="btn outline-btn">Send Email</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Your Location</p>
+                    <a href="#" class="btn outline-btn">View on Map</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+1 234 567 890</p>
+                    <a href="tel:+1234567890" class="btn outline-btn">Call Now</a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">WOO KE SHENG</span>
+                <p>Web Developer & Designer</p>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Woo Ke Sheng. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
